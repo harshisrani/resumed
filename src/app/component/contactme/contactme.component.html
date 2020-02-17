@@ -1,0 +1,46 @@
+<div class="card">
+  <div class="card-header bg-awsbg text-white" id="contactmeheader">
+    {{'site.contactme' | translate }}
+  </div>
+  <div class="card-body">
+    <form [formGroup]="emailForm">
+      <div class="form-group">
+        <label for="sendername">{{'site.emailform.name'|translate}}</label>
+        <input formControlName="sendername" type="text" class="form-control" id="sendername" required>
+      </div>
+      <div class="form-group">
+        <label for="senderemail">{{'site.emailform.email'|translate}}</label>
+        <input formControlName="senderemail" type="email" class="form-control" id="senderemail" required>
+      </div>
+      <div class="form-group">
+        <label for="emailtitle">{{'site.emailform.title'|translate}}</label>
+        <input formControlName="emailtitle" type="text" class="form-control" id="emailtitle" required>
+      </div>
+      <div class="form-group">
+        <label for="emailmessage">{{'site.emailform.message'|translate}}</label>
+        <textarea formControlName="emailmessage" class="form-control" rows="10" id="emailmessage"
+          placeholder="{{'site.emailform.message'|translate}}" required></textarea>
+      </div>
+      <button [disabled]="!emailForm.valid" type="submit" class="btn btn-awsorange"
+        (click)="onSubmit();openPopup('contactme-popup')">{{'site.emailform.send'|translate}}</button>
+    </form>
+  </div>
+</div>
+
+<cv-popup id="contactme-popup">
+  <div class="cv-popup">
+    <div class="cv-popup-body">
+      <div class="card">
+        <div class="card-header bg-awsbg text-white">
+          {{'site.emailform.completeboxtitle'|translate}}
+        </div>
+        <div class="card-body">
+          <p>{{'site.emailform.completeboxmsg'|translate}}</p>
+          <button class="btn btn-awsorange"
+            (click)="closePopup('contactme-popup');">{{'site.emailform.completeboxclose'|translate}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cv-popup-background"></div>
+</cv-popup>

@@ -1,0 +1,25 @@
+<div class="accordion pb-2" id="accordionSelfDescription">
+  <div class="card">
+    <div class="card-header bg-awsbg" id="headingDescription">
+      <h2 class="mb-0">
+        <button class="btn text-decoration-none text-white d-flex" type="button" data-toggle="collapse"
+          data-target="#collapseSelfDescription" aria-expanded="true" aria-controls="collapseSelfDescription">
+          <i class="fa fa-user fa-fw mr-4"></i><span>{{'site.introduction'|translate}}</span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSelfDescription" class="collapse show" aria-labelledby="headingDescription"
+      data-parent="#accordionSelfDescription">
+      <div class="card-body">
+        <div *ngFor="let selfdescription of ('selfdescriptions' | translate)">
+          <p>{{selfdescription}}</p>
+        </div>
+        <div class="row">
+          <div class="col-4" *ngFor="let badge of ('badges' | translate)">
+            <a href="{{badge.url}}" target="_blank"><img src="{{badge.image}}" alt="{{badge.alt}}" class="w-100"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

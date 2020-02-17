@@ -1,0 +1,38 @@
+<div class="accordion pb-2" id="accordionBusinessKnowledge">
+  <!--Business-->
+  <div class="card">
+    <div class="card-header bg-awsbg" id="headingBusinessKnowledge">
+      <h2 class="mb-0">
+        <button class="btn text-decoration-none text-white d-flex" type="button" data-toggle="collapse"
+          data-target="#collapseBusinessKnowledge" aria-expanded="true" aria-controls="collapseBusinessKnowledge">
+          <i class="fa fa-address-card fa-fw mr-4"></i><span>{{'site.businessknowledge'|translate}}</span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseBusinessKnowledge" class="collapse" aria-labelledby="headingBusinessKnowledge"
+      data-parent="#accordionBusinessKnowledge">
+      <div class="card-body">
+        <span class="badge badge-primary font-weight-bolder" *ngFor="let knowledge of ('businessknowledges'|translate)">#{{knowledge}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Skill-->
+<div class="accordion pb-2" id="accordionSkillSet">
+  <div class="card">
+    <div class="card-header bg-awsbg" id="headingSkill">
+      <h2 class="mb-0">
+        <button class="btn text-decoration-none text-white d-flex" type="button" data-toggle="collapse"
+          data-target="#collapseheadingSkill" aria-expanded="true" aria-controls="collapseheadingSkill">
+          <i class="fa fa-wrench fa-fw mr-4"></i><span>{{'site.skills'|translate}}</span>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseheadingSkill" class="collapse" aria-labelledby="headingheadingSkill"
+      data-parent="#accordionSkillSet">
+      <div class="card-body">
+        <span class="badge badge-info font-weight-bolder" *ngFor="let knowledge of ('technicalknowledges'|translate)">#{{knowledge}}</span>
+      </div>
+    </div>
+  </div>
+</div>

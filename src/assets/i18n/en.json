@@ -1,0 +1,142 @@
+﻿{
+  "site": {
+    "title": "Harsh Israni | AWS Certified Developer - Associate",
+    "home": "HOME",
+    "contactme": "Contact me",
+    "techofpage": "Configuration",
+    "aboutpage": "About Page",
+    "certification": "Certification",
+    "education": "Education",
+    "businessknowledge": "Business knowledge",
+    "skills": "Skills",
+    "introduction": "Introduction",
+    "workexperience": "Working Experience",
+    "Slogan": "Life is short, Do what matters!",
+    "emailform": {
+      "name": "NAME",
+      "email": "YOUR EMAIL",
+      "title": "TITLE",
+      "message": "MESSAGE",
+      "send": "SEND",
+      "completeboxtitle": "Thank you",
+      "completeboxmsg": "Thanks for your interest. I will reply your email ass soon as possible",
+      "completeboxclose": "CLOSE",
+      "emailbyaws": "Email service by Amazon API Gateway and AWS Lambda"
+    },
+    "chatbotform": {
+      "invitation": "Welcome to chat with Harsh's Chatbot (BETA)!",
+      "usernameplaceholder": "YOUR NAME",
+      "startbutton": "START CONVERSATION",
+      "placeholder": "PLEASE INPUT YOUR MESSAGE",
+      "chatbotbyaws": "Natural language understanding (NLU) service by AWS Lex to recognize the intent of the text, Comprehend and Translate for translation."
+    }
+  },
+  "aboutpage": {
+    "title": "About Page",
+    "para1": "Welcome to the Harsh Israni's Resume. This website is hosted in the AWS data center and uses various AWS products to provide services. The website owner establish and operate this website is for understanding different cloud products and programming languages and technologies, and also demostrating the process of learning cloud technology to people who have passion in learning cloud meanwhile without technological knowledge."
+  },
+  "personalinfo": {
+    "name": "Harsh Israni",
+    "title": "Analyst Programmer",
+    "industry": "‎Industrial equipment and Information Technology",
+    "hometown": "Mumbai,India",
+    "email": "israni0703@gmail.com",
+    "areacode": "91",
+    "mobile": "7666623339",
+    "whatsappmsg": "Hi%20Harsh!%20You%20have%20made%20a%20good%20Angular%20Resume!",
+    "cvphoto": "https://websitedataresume.s3.ap-south-1.amazonaws.com/images/profile.jpg"
+  },
+  "educations": [
+    {
+      "year": "2018",
+      "award": "Bachelor of Science in Information Technology",
+      "institution": "Mumbai University"
+    }
+  ],
+  "qualifications": [
+   
+   
+    {
+      "year": "2019",
+      "award": "Amazon Web Services Developer Associate",
+      "credentialid": "",
+      "institution": "Amazon Web Services (AWS)"
+    }
+    
+  ],
+  "socialmedia": {
+    "statement": "Find me on social media",
+    "facebook": "https://www.facebook.com/israni3",
+    "linkedin": "https://www.linkedin.com/in/cavour-iy-poon-36488176/",
+    "github": "https://github.com/harshisrani"
+  },
+  "businessknowledges": [
+    "Application Development",
+    "Cloud Deployment and Application",
+    "Customer Automation",
+    "Data Analysis",
+	"SAP Automation",
+	"SAP Development"
+  ],
+  "technicalknowledges": [
+    "Python",
+    "C#",
+    "Visual Basic(VBA)",
+    "SQL",
+    "NoSQL",
+    "SAP",
+	"UiPath"
+  ],
+  "selfdescriptions": [
+    "I am a results-oriented professional who enjoys working in fast-paced atmospheres.",
+    "My background demonstrates the ability to cross-collaborate with multiple departments to execute joint initiatives and analyze company processes to improve operational efficiency via keen software solutions. My peers know me as a self-starter with excellent communication skills and a team player with the ability to work with people from diverse backgrounds.",
+    "I look forward to meeting you! You can reach me at +7666623339 or israni0703@gmail.com."
+  ],
+  "badges":[
+    {"image":"https://websitedataresume.s3.ap-south-1.amazonaws.com/images/AWS-Certified_Developer_Associate_512x512.6d5f0ad35de66966c96f8e408e4fd919c1a2d753.png",
+      "url":"https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2020-01-23&ci=AWS01253720",
+      "alt":"AWS Certified Developer - Associate"
+    },
+	{"image":"https://websitedataresume.s3.ap-south-1.amazonaws.com/images/RPA.jpg",
+      "url":"",
+      "alt":"UiPath Developer"
+	
+
+}
+  ],
+  "previousjobs": [
+    {
+      "jobid": "fwdit",
+      "title": "Analyst Programmer",
+      "company": "Capgemini",
+      "start": "Aug 2018",
+      "end": "Present",
+      "description": [
+        "Hands-on experience on UiPath for developing back office bots.",
+        "Knowledge in all phases of SDLC such as Analysis, Design, Development, Integration, Implementation, and Maintenance.",
+        "Experience in developing, designing, testing and deployment of  RPA (Robotics Process Automation) solutions using UiPath",
+        "Work on Extracted data from the web application, Windows Application, PDF, Images and web pages, etc. and exported to output data to database/excel",
+        "Hands-on experience in Automating Web interfaces, desktop application interfaces",
+        "Automating SAP"
+      ]
+    }
+  ],
+  "technology": {
+    "hosting": {
+      "title": "Hosting",
+      "content": "This website uses both Infrastructures As A Service (IAAS) and Function As A Service (FAAS). Web server of this website is on AWS Amazon Linux with Apache as the webserver and Angular for UI rendering. Those supporting services such as email delivery in the 'Contact Me' page or pushing message to Chatbot are done by Lambda Function. Some services are fully managed by AWS such as Simple Email Service (SES) and AWS Comprehend which provide API for me to send requests and AWS will be responsible for scale-up or failover."
+    },
+    "availibility": {
+      "title": "Availibility",
+      "content": "The infrastructure of our services such as SES for mail delivery, Lambda Function as API is managed by AWS. AWS will help us to maintain the availability and scale up the resource automatically if necessary."
+    },
+    "development": {
+      "title": "Development",
+      "content": "This website also using Git for source control. Lambda Function can also be found in the Github repository."
+    },
+    "deployment": {
+      "title": "Deployment",
+      "content": "I am trying Continue Deployment /Integration (CD/CI) on this website. Jenkins is also installed on the same server. It will listen to the Github repository and deploy the website automatically if there is any check-in. In addition, the site has been containerized and allowed to be executed on different system platforms."
+    }
+  }
+}

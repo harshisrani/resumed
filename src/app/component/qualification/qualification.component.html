@@ -1,0 +1,22 @@
+<div class="accordion pb-2" id="accordionQualification">
+    <div class="card">
+        <div class="card-header bg-awsbg" id="headingQualification">
+            <h2 class="mb-0">
+                <button class="btn text-decoration-none text-white d-flex" type="button" data-toggle="collapse"
+                    data-target="#collapseQualification" aria-expanded="true" aria-controls="collapseQualification">
+                    <i class="fa fa-star fa-fw mr-4"></i><span>{{'site.certification'|translate}}</span>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseQualification" class="collapse" aria-labelledby="headingQualification"
+            data-parent="#accordionQualification">
+            <div class="card-body">
+                <ul>
+                    <li *ngFor="let qualification of ('qualifications'|translate)">
+                        {{qualification.award}} ({{qualification.year}}) - {{qualification.institution}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

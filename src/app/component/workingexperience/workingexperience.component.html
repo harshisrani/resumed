@@ -1,0 +1,26 @@
+<div class="accordion pb-2" id="accordionExperience">
+  <div class="card">
+    <div class="card-header bg-awsbg" id="headingExperience">
+      <h2 class="mb-0">
+        <button class="btn text-decoration-none text-white" type="button" data-toggle="collapse"
+          data-target="#collapseExperience" aria-expanded="true" aria-controls="collapseExperience">
+          <i class="fa fa-suitcase fa-fw mr-4"></i>{{'site.workexperience'|translate}}
+        </button>
+      </h2>
+    </div>
+    <div id="collapseExperience" class="collapse show" aria-labelledby="headingExperience"
+      data-parent="#accordionExperience">
+      <div class="card-body">
+        <ul *ngFor="let previousjob of ('previousjobs'|translate)">
+          <p>{{previousjob.title}} - {{previousjob.company}}</p>
+          <p><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{previousjob.start}} -
+            {{previousjob.end}}</p>
+            <li class="ml-4" *ngFor="let duty of previousjob.description">
+              {{duty}}
+            </li>
+            <hr>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

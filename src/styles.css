@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-awsbg{
+    background-color:#232f3e!important
+}
+a.bg-awsbg:focus,a.bg-awsbg:hover,button.bg-awsbg:focus,button.bg-awsbg:hover{
+    background-color:#232f3e!important
+}
+.btn-awsorange{
+    color:#fff;
+    background-color:#e47911;
+    border-color:#e47911
+}
+.btn-awsorange:hover{
+    color:#fff;
+    background-color:#e47911;
+    border-color:#e47911
+}
+.btn-awsorange.focus,.btn-awsorange:focus{
+    color:#fff;
+    background-color:#e47911;
+    border-color:#e47911;
+    box-shadow:0 0 0 .2rem#aab7b8
+}
+.btn-awsorange.disabled,.btn-awsorange:disabled{
+    color:#fff;
+    background-color:#e47911;
+    border-color:#e47911
+}
+.btn-awsorange:not(:disabled):not(.disabled).active,.btn-awsorange:not(:disabled):not(.disabled):active,.show>.btn-awsorange.dropdown-toggle{
+    color:#fff;
+    background-color:#e47911;
+    border-color:#e47911
+}
+.btn-awsorange:not(:disabled):not(.disabled).active:focus,.btn-awsorange:not(:disabled):not(.disabled):active:focus,.show>.btn-awsorange.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(38,143,255,.5)}

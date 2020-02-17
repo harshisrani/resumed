@@ -1,0 +1,34 @@
+<div class="container" id="greetingbox" [hidden]="!hidechatbot">
+  <form [formGroup]="guestNameForm">
+    <div class="row" style="margin:0 -8px 8px -8px">
+      <p>{{'site.chatbotform.invitation' | translate }}</p>
+      <input formControlName="guestname" class="form-control" type="text"
+             (keyup.enter)="startconversation()" placeholder="{{'site.chatbotform.usernameplaceholder' | translate }}"
+             required name="Guset Name">
+    </div>
+    <button class="btn btn-awsorange" type="button"
+            (click)="startconversation()">{{'site.chatbotform.startbutton' | translate }}</button>
+  </form>
+  <div class="right"> {{'site.chatbotform.chatbotbyaws' | translate }}</div>
+</div>
+<div class="container" [hidden]="hidechatbot">
+  <div class="chat-area mb-4">
+    <ng-container *ngFor="let message of messages" >
+      <div class="message {{message.action}}">
+        <p>{{message.sender}}({{message.posttime}})</p>
+        {{message.content}}
+      </div>
+    </ng-container>
+  </div>
+  <div class="chat-input" id="chat-input">
+    <textarea [(ngModel)]="userInput" (keyup.enter)=postLexText()
+              placeholder="{{'site.chatbotform.placeholder' | translate }}"
+              [disabled]="tempdisabled" class="form-control mb-2" type="text" rows="2"></textarea>
+    <button class="btn btn-awsorange" (click)="postLexText()" [disabled]="tempdisabled">
+      <div class="circle float-right">
+        <i class="fa fa-paper-plane"></i>
+      </div>
+    </button>
+  </div>
+</div>
+

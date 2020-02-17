@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* The popup chat - hidden by default */
+.chat-container {
+  display: none;
+  position: fixed;
+  width: 400px;
+  max-height: 600px;
+  bottom: 50px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+}
+
+.chat-area{
+  max-height: 400px;
+  overflow: auto;
+}
+.chat-input{
+  height: 100px;
+}
+
+/* Add some hover effects to buttons */
+.chat-container, .open-button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .chat-container  {
+    width: 80%;
+  }
+}

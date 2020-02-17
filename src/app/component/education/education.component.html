@@ -1,0 +1,22 @@
+<div class="accordion pb-2" id="accordionEducation">
+    <div class="card">
+        <div class="card-header bg-awsbg" id="headingEducation">
+            <h2 class="mb-0">
+                <button class="btn text-decoration-none text-white d-flex" type="button" data-toggle="collapse"
+                    data-target="#collapseEducation" aria-expanded="true" aria-controls="collapseEducation">
+                    <i class="fa fa-graduation-cap fa-fw mr-4"></i><span>{{'site.education'|translate}}</span>
+                </button>
+            </h2>
+        </div>
+        <div id="collapseEducation" class="collapse" aria-labelledby="headingEducation"
+            data-parent="#accordionEducation">
+            <div class="card-body">
+                <ul>
+                    <li *ngFor="let education of ('educations' | translate)">
+                        {{education.award}} ({{education.year}}) - {{education.institution}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
